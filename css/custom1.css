@@ -192,6 +192,7 @@ li.timeline-item::before {
     height: 100vh;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 .imgs .p1{
     left: 30% !important;
