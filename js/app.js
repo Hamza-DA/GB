@@ -66,12 +66,19 @@ window.onscroll = function () {
 
 const burger = document.querySelector('.burger')
 const menu = document.querySelector('.navbar-nav')
+const bar1 = document. querySelector('.l1')
+const bar2 = document. querySelector('.l2')
 burger.addEventListener('click', ()=> {
     menu.classList.toggle('menu-opened')
+    bar1.classList.toggle('l1-cross')
+    bar2.classList.toggle('l2-cross')
 });
 const navLinks = document.querySelectorAll('.nav-link')
 navLinks.forEach(e => {
     e.addEventListener('click' ,()=> {
         menu.classList.remove('menu-opened')
+        bar1.classList.remove('l1-cross')
+        bar2.classList.remove('l2-cross')
+    
     })
 });
